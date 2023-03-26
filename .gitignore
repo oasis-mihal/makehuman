@@ -87,3 +87,6 @@ Thumbs.db
 # Python Packages #
 ###################
 .eggs/*
+makehuman/build/**
+makehuman/dist/**
+makehuman.spec

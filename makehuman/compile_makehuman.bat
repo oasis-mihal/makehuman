@@ -1,0 +1,23 @@
+pyinstaller makehuman.py -y --windowed ^
+--paths "lib" ^
+--paths "shared" ^
+--paths "core" ^
+--paths "apps" ^
+--paths "apps\gui" ^
+--paths "../" ^
+--add-data "data;data" ^
+--add-data "icons;icons" ^
+--add-data "licenses;licenses" ^
+--add-data "plugins;plugins" ^
+--icon "icons\makehuman.ico" ^
+--hidden-import=guimodifier ^
+--hidden-import=projection ^
+--hidden-import=filecmp ^
+--hidden-import=bvh ^
+--hidden-import=proxychooser ^
+--hidden-import=humanobjchooser ^
+--hidden-import=skeleton_drawing ^
+--hidden-import=guirender ^
+--hidden-import=export ^
+--hidden-import=imp ^
+--hidden-import=OpenGL_accelerate
